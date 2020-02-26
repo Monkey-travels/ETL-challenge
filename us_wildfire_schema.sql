@@ -1,0 +1,31 @@
+-- Create a table for the cleaned data (us wildfires) to be loaded into
+DROP TABLE IF EXISTS us_wildfies;
+
+CREATE TABLE us_wildfires (
+objectid INT PRIMARY KEY,
+source_system_type TEXT,
+nwcg_reporting_unit_id TEXT,
+nwcg_reporting_unit_name TEXT,    
+source_reporting_unit TEXT,
+source_reporting_unit_name TEXT,  
+fire_name TEXT,   
+fire_year INT, 
+discovery_date FLOAT,
+discovery_date_new TEXT,
+discovery_doy INT,
+discovery_time TEXT,
+cont_date FLOAT,
+cont_date_new TEXT,
+cont_doy FLOAT,
+cont_time TEXT,  
+fire_size FLOAT,  
+fire_size_class TEXT,
+latitude FLOAT,
+longitude FLOAT,
+owner_code FLOAT,
+owner_descr TEXT,
+state TEXT, 
+county TEXT,
+fips_code TEXT, 
+fips_name TEXT,    
+);
